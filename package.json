@@ -1,0 +1,12 @@
+{
+  "name": "my-monorepo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node ./script/preinstall.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
