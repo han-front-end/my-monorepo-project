@@ -5,6 +5,9 @@ import Pages from 'vite-plugin-pages'
 import Unocss from 'unocss/vite'
 import { presetUno, presetAttributify, presetIcons } from "unocss";
 
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+
 
 export default defineConfig({
   resolve: {
@@ -23,6 +26,19 @@ export default defineConfig({
     }),
     Pages({
       extensions: ['vue']
+    }),
+    AutoImport({
+      imports: [
+        'vue',
+        'vue-router',
+        'pinia'
+      ],
+      dts: 'src/auto-imports.d.ts'
+    }),
+    Components({
+      extensions: ['vue'],
+      include:[/\.vue$/],
+      dts: 'src/components.d.ts'
     })
   ]
 })
