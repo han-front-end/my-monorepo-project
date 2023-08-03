@@ -1,2 +1,9 @@
 # 按钮 - Button
-<HelloWorld></HelloWorld>
+
+:::demo
+```vue
+<template>
+  <HelloWorld></HelloWorld> 
+</template>
+```
+:::

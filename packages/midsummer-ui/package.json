@@ -2,6 +2,7 @@
   "name": "midsummer-ui",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -13,7 +14,10 @@
   },
   "dependencies": {
     "lint-staged": "^13.2.3",
+    "markdown-it": "^13.0.1",
     "mrm": "2",
+    "vitepress": "1.0.0-beta.3",
+    "vitepress-theme-demoblock": "^3.0.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {
@@ -28,7 +32,6 @@
     "prettier": "^3.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vitepress": "1.0.0-beta.7",
     "vue-tsc": "^1.8.5"
   }
 }
