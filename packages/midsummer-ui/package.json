@@ -13,9 +13,13 @@
     "docs:serve": "vitepress serve docs"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "lint-staged": "^13.2.3",
     "markdown-it": "^13.0.1",
     "mrm": "2",
+    "postcss": "^8.4.27",
+    "scss": "^0.2.4",
+    "tailwindcss": "^3.3.3",
     "vitepress": "1.0.0-beta.3",
     "vitepress-theme-demoblock": "^3.0.3",
     "vue": "^3.3.4"
