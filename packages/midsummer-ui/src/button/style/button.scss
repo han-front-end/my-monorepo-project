@@ -1,0 +1,9 @@
+@use './button-config.scss';
+@import './button-base.scss';
+
+
+.m-btn {
+  @include button-base;
+  @include button-variant(button-config.$type);
+  @include button-variant(button-config.$pseudo, true);
+}

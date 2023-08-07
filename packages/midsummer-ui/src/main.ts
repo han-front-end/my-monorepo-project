@@ -3,7 +3,7 @@ import App from './App.vue'
 
 import Button from './button'
 
-import './index.css'
+import './index.scss'
 import './style.css'
 
 const app = createApp(App)

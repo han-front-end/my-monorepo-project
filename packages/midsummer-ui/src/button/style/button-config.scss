@@ -1,0 +1,59 @@
+// 所有不同type按钮自定义样式
+@import '@/style/variable';
+
+// 按钮类型的配置
+$type: (
+  primary: (
+    color: $m-light-text,
+    background-color: $m-primary,
+  ),
+  secondary: (
+    color: $m-text,
+    background-color: $m-block,
+    border-color: $m-line,
+  ),
+  text: (
+    padding: 0,
+    color: $m-brand-active,
+  )
+);
+
+// 伪类
+$pseudo: (
+  primary: (
+    hover: (
+      background-color: $m-primary-hover,
+    ),
+    focus: (
+      background-color: $m-primary-hover,
+    ),
+    active:(
+      background-color: $m-primary-active,
+    )
+  ),
+  secondary: (
+    hover: (
+      border-color: $m-form-control-line-active,
+      color: $m-brand-active,
+    ),
+    focus: (
+      border-color: $m-form-control-line-active,
+      color: $m-brand-active,
+    ),
+    active: (
+      border-color: $m-form-control-line-active,
+      color: $m-brand-active,
+    ),
+  ),
+  text: (
+    hover: (
+      color: $m-brand-active-focus,
+    ),
+    focus: (
+      color: $m-brand-active-focus,
+    ),
+    active: (
+      color: $m-brand-active-focus,
+    ),
+  )
+);

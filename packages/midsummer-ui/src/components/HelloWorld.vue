@@ -1,10 +1,10 @@
 <script setup lang="ts">
-defineProps<{ msg: string }>()
 
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
-  <div>HelloWorld</div>
+  <m-button type="primary"></m-button>
+  <MButton></MButton>
+  <div class="text-5xl bg-amber-100">HelloWorld</div>
 </template>
 
