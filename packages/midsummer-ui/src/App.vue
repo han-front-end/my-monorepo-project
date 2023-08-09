@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import Test from "./components/Test.tsx";
+import MButton from "@/button/src/button.tsx";
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
-  <Test></Test>
+  <m-button type="primary" size="large" block>确定</m-button>
+  <m-button type="primary" size="medium">确定</m-button>
+  <m-button type="primary" size="small" disabled>确定</m-button>
 </template>
 
 <style scoped>

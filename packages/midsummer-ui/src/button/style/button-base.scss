@@ -10,6 +10,14 @@
   @apply outline-0 leading-normal whitespace-nowrap cursor-pointer;
   // 文字样式
   font-size: $m-font-size-md;
+  // 禁用状态
+  &[disabled] {
+    @apply cursor-not-allowed
+  }
+  // 块级
+  &.m-btn--block {
+    @apply block w-full
+  }
 
   //其他样式
   transition: background-color $m-animation-duration-slow $m-animation-ease-in-out-smooth,

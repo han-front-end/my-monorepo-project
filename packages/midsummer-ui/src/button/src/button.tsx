@@ -5,10 +5,13 @@ export default defineComponent({
   name: 'MButton',
   props: buttonProps,
   setup(props: ButtonProps,{ slots}) {
-    const { type } = toRefs(props)
-    const defaultSlot  = slots.default ? slots.default : '按钮'
+    const { type, size, disabled, block} = toRefs(props)
+    // 默认插槽
+    const defaultSlot  = slots.default ? slots.default() : '按钮'
+    // block
+    const blockCls = block.value ? 'm-btn--block' : ''
     return () => {
-      return <button class={`m-btn m-btn--${type.value}`}>{defaultSlot}</button>
+      return <button disabled={disabled.value} class={`m-btn m-btn--${type.value} m-btn--${size.value} ${blockCls}`}>{defaultSlot}</button>
     }
   }
 })

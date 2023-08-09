@@ -6,4 +6,5 @@
   @include button-base;
   @include button-variant(button-config.$type);
   @include button-variant(button-config.$pseudo, true);
+  @include button-variant(button-config.$size);
 }

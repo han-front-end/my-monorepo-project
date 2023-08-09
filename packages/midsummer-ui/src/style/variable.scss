@@ -1,7 +1,9 @@
 // 变量
 // 定义主题变量
 $m-border-radius: var(--m-border-radius, 2px); // 一般圆角
-$m-font-size-md: var(--s-font-size-md, 12px); //当组件size位''时使用此字号大小
+$m-font-size-sm: var(--s-font-size-sm, 12px); //当组件size为small时使用此字号大小
+$m-font-size-md: var(--s-font-size-md, 14px); //当组件size位medium时使用此字号大小
+$m-font-size-lg: var(--s-font-size-lg, 16px); //当组件size位large时使用此字号大小
 $m-animation-duration-slow: var(--m-animation-duration-slow, 300ms);
 $m-animation-ease-in-out-smooth: var(
     --m-animation-sase-in-out-smooth,
@@ -9,9 +11,13 @@ $m-animation-ease-in-out-smooth: var(
 );
 $m-light-text: var(--m-light-text, #ffffff); // 有色深色背景下字体颜色
 $m-primary: var(--m-primary, #5e7ce0); // 主要按钮，同品颜色
+$m-primary-disabled: var(--m-primary-disabled, #879ada); // 主要按钮，同品颜色 禁用
 $m-primary-hover: var(--m-primary-hover, #7693f5); // 主要按钮悬停
 $m-primary-active: var(--m-primary-active, #344899); // 主要按钮激活
 $m-text: var(--m-text, #252b3a); // 正文文本
+$m-disabled-text: var(--m-disabled-text, #8891a7); // 正文文本
+$m-disabled-bg: var(--m-disabled-bg, #c2cce5); // 禁用背景色
+$m-disabled-line: var(--m-disabled-line, #a9b0c0); // 禁用边框
 $m-block: var(--m-block, #ffffff); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
 $m-line: var(--m-line, #adb0b8); // 边框分割线，仅用于边框
 $m-form-control-line-active: var(--m-form-control-line-active, #5e7ce0); // 表单控件边框激活色，用于获取焦点
