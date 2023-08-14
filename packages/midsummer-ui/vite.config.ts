@@ -18,8 +18,8 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "happy-dom",
-    testTransformMode: {
-      web: ['/\.[tj]sx$/']
+    transformMode: {
+      web: [/\.[jt]sx$/]
     }
   }
 })
