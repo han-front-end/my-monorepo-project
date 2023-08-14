@@ -11,11 +11,11 @@ $m-animation-ease-in-out-smooth: var(
 );
 $m-light-text: var(--m-light-text, #ffffff); // 有色深色背景下字体颜色
 $m-primary: var(--m-primary, #5e7ce0); // 主要按钮，同品颜色
-$m-primary-disabled: var(--m-primary-disabled, #879ada); // 主要按钮，同品颜色 禁用
+$m-primary-disabled: var(--m-primary-disabled, #879ada); // 主要按钮，同品颜色 禁用状态
 $m-primary-hover: var(--m-primary-hover, #7693f5); // 主要按钮悬停
 $m-primary-active: var(--m-primary-active, #344899); // 主要按钮激活
 $m-text: var(--m-text, #252b3a); // 正文文本
-$m-disabled-text: var(--m-disabled-text, #8891a7); // 正文文本
+$m-disabled-text: var(--m-disabled-text, #8891a7); // 禁用文本
 $m-disabled-bg: var(--m-disabled-bg, #c2cce5); // 禁用背景色
 $m-disabled-line: var(--m-disabled-line, #a9b0c0); // 禁用边框
 $m-block: var(--m-block, #ffffff); // 大面积的不可折叠区块的背景色（例如顶部导航背景色）
