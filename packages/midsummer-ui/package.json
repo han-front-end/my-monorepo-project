@@ -11,10 +11,12 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "test": "vitest"
+    "test": "vitest",
+    "build:components": "node scripts/build.cjs"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "fs-extra": "^11.1.1",
     "lint-staged": "^13.2.3",
     "markdown-it": "^13.0.1",
     "mrm": "2",
