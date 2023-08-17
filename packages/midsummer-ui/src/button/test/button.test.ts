@@ -91,3 +91,12 @@ test('prop block should work', () => {
   expect(button.classList.contains('m-btn--block')).toBe(true)
 })
 
+test('prop disabled should work', () => {
+  const {getByRole} = render(Button, {
+    props: {
+      disabled: true
+    }
+  })
+  const button = getByRole('button')
+  expect(button.disabled).toBe(true)
+})
