@@ -1,0 +1,18 @@
+
+  {
+    "name": "button",
+    "version": "0.0.0",
+    "main": "index.umd.cjs",
+    "module": "index.js",
+    "author": "midsummer",
+    "description": "第一个个人开发的组件库，以后用于协助开发其他项目",
+    "repository": {
+      "type": "git",
+      "url": ""
+    },
+    "keywords": ["vue3","组件库","tsx","UI"],
+    "license": "ISC",
+    "bugs": {
+      "url": ""
+    }
+  }

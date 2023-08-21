@@ -1,4 +1,4 @@
-import { defineComponent as c, toRefs as r, createVNode as b } from "vue";
+import { defineComponent as i, toRefs as p, createVNode as c } from "vue";
 const f = {
   type: {
     type: String,
@@ -16,30 +16,30 @@ const f = {
     type: Boolean,
     default: !1
   }
-}, n = /* @__PURE__ */ c({
+}, n = /* @__PURE__ */ i({
   name: "MButton",
   props: f,
-  setup(t, {
-    slots: e
+  setup(e, {
+    slots: t
   }) {
     const {
-      type: o,
+      type: a,
       size: l,
-      disabled: a,
+      disabled: o,
       block: s
-    } = r(t), u = e.default ? e.default() : "按钮", d = s.value ? "m-btn--block" : "";
-    return () => b("button", {
-      disabled: a.value,
-      class: `m-btn m-btn--${o.value} m-btn--${l.value} ${d}`
+    } = p(e), u = t.default ? t.default() : "按钮", d = s.value ? "m-btn--block" : "";
+    return () => c("button", {
+      disabled: o.value,
+      class: `m-btn m-btn--${a.value} m-btn--${l.value} ${d}`
     }, [u]);
   }
-}), i = {
-  install(t) {
-    t.component(n.name, n);
+}), m = {
+  install(e) {
+    e.component(n.name, n);
   }
-}, p = [i], y = {
-  install(t) {
-    p.forEach((e) => t.use(e));
+}, r = [m], y = {
+  install(e) {
+    r.forEach((t) => e.use(t));
   }
 };
 export {
