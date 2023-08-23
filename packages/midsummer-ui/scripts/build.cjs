@@ -39,14 +39,14 @@ const createPackagreJson = name => {
   const fileStr = `
   {
     "name": "${name ? name : 'midsummer-ui'}",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "main": "${name ? 'index.umd.cjs' : 'midsummer-ui.umd.cjs'}",
     "module": "${name ? 'index.js' : 'midsummer-ui.js'}",
     "author": "midsummer",
     "description": "第一个个人开发的组件库，以后用于协助开发其他项目",
     "repository": {
       "type": "git",
-      "url": ""
+      "url": "git+https://github.com/lazydog11/my-monorepo-project.git"
     },
     "keywords": ["vue3","组件库","tsx","UI"],
     "license": "ISC",

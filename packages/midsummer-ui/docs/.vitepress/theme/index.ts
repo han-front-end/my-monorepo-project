@@ -1,6 +1,6 @@
 import Theme from 'vitepress/theme'
-import HelloWorld from "../../../src/components/HelloWorld.vue";
 import Test from "../../../src/components/Test";
+import MButton from '../../../src/button/src/button'
 
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 
@@ -10,8 +10,8 @@ import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue'
 export default {
   ...Theme,
   enhanceApp({app}) {
-    app.component('HelloWorld', HelloWorld)
     app.component('Test', Test)
+    app.component('MButton',MButton)
     app.component('DemoBlock', DemoBlock)
     app.component('Demo', Demo)
   }

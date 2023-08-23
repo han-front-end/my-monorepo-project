@@ -3,7 +3,7 @@
 :::demo
 ```vue
 <template>
-  <HelloWorld></HelloWorld> 
+  <m-button></m-button>
 </template>
 ```
 :::
