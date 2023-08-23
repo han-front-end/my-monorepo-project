@@ -7,7 +7,7 @@ import './index.scss'
 import './style.css'
 
 // 使用全量导出
-import MidSummerUI from '../build/'
+import MidSummerUI from 'build'
 
 const app = createApp(App)
 
