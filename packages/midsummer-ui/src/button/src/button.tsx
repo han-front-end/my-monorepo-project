@@ -1,5 +1,5 @@
 import {defineComponent, toRefs} from "vue";
-import {buttonProps, ButtonProps} from "./button-types.ts";
+import {buttonProps, ButtonProps} from "./button-type.ts";
 
 export default defineComponent({
   name: 'MButton',

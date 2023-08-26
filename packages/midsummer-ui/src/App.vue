@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MButton from "@/button/src/button.tsx";
+import MButton from "../src/button/src/button.tsx";
 </script>
 
 <template>

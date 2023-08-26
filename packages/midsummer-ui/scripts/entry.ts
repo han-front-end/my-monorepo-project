@@ -3,6 +3,8 @@
 import type {App} from 'vue'
 import buttonPlugin, { Button } from '../src/button'
 
+console.log(buttonPlugin)
+
 // 2.导出这些组件
 export { Button }
 
