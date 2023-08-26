@@ -2,6 +2,7 @@ import Theme from 'vitepress/theme'
 import Test from "../../../src/components/Test";
 import MButton from '../../../src/button/src/button'
 
+import '../../../src/button/style/button.scss'
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
 
 import DemoBlock from "vitepress-theme-demoblock/dist/client/components/DemoBlock.vue";
