@@ -1,4 +1,4 @@
-modules.exports = {
+exports = {
   "env": {
     "browser": true,
     "es2021": true
@@ -18,7 +18,7 @@ modules.exports = {
         ".eslintrc.{js,cjs}"
       ],
       "parserOptions": {
-        "sourceType": "script"
+        "sourceType": "module"
       }
     }
   ],
