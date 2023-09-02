@@ -1,3 +1,4 @@
+import type {App} from 'vue'
 import Theme from 'vitepress/theme'
 import Test from "../../../src/components/Test";
 import MButton from '../../../src/button/src/button'
@@ -11,7 +12,7 @@ import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue'
 
 export default {
   ...Theme,
-  enhanceApp({app}) {
+  enhanceApp({app}: {app:App<never>}) {
     app.component('Test', Test)
     app.component('MButton',MButton)
     app.component('MTree',MTree)

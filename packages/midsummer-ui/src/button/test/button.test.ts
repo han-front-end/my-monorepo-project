@@ -1,4 +1,4 @@
-import {render} from '@testing-library/vue'
+import {render, fireEvent} from '@testing-library/vue'
 import Button from '../src/button'
 import {expect, test} from "vitest";
 
@@ -91,12 +91,15 @@ test('prop block should work', () => {
   expect(button.classList.contains('m-btn--block')).toBe(true)
 })
 
-test('prop disabled should work', () => {
+test('prop disabled should work', async () => {
   const {getByRole} = render(Button, {
     props: {
       disabled: true
     }
   })
-  const button = getByRole('button')
+  const button = getByRole('button') as HTMLButtonElement
+
+  // 模拟点击按钮
+  await fireEvent.click(button);
   expect(button.disabled).toBe(true)
 })
