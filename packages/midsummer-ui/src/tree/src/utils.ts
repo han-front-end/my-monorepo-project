@@ -6,7 +6,6 @@ export function generateInnerTree(tree: ITreeNode[], level = 0, path = [] as IIn
   return tree.reduce((prev, cur) => {
     const o = {...cur} as IInnerTreeNode
     o.level = level
-
     // 记录调用栈
     if (path.length > 0 && path[path.length - 1].level >= o.level) {
       console.log(path[path.length - 1].label,o.label)
@@ -18,13 +17,11 @@ export function generateInnerTree(tree: ITreeNode[], level = 0, path = [] as IIn
     }
     // 记录 父 => 子
     path.push(o)
-
     //获取parentNode
     const parentNode = path[path.length - 2]
     if (parentNode) {
       o.parentId = parentNode.id
     }
-
     // 判断cur是否存在children，如果存在则递归遍历
     if (o.children) {
       // 如果存在子节点，将都有的子节点拼接上
