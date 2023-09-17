@@ -3,6 +3,10 @@
 import type {App} from 'vue'
 import buttonPlugin, { Button } from '../src/button'
 
+
+// 引入全局样式
+import '../src/index.scss'
+
 console.log(buttonPlugin)
 
 // 2.导出这些组件
