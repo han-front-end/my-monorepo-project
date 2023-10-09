@@ -14,6 +14,8 @@ dist-ssr
 cli/build
 build
 docs/.vitepress/cache
+docs/.vitepress/cache/deps
+docs/.vitepress/cache/deps/*
 
 # Editor directories and files
 .vscode/extensions.json
